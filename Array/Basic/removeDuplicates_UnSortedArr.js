@@ -3,23 +3,21 @@
 let arr = [10,20,30,40,50,10,20,30];
 
 let ans = [];
-let k = 0 ;
-for(let i=0 ; i<arr.length;i++){
-    let visited = false ;
-    for(let j=i+1;j<=arr.length-1;j++){
-            if(arr[i]==arr[j]){
-                visited = true ;
-                continue;
-            }
 
+for (let i = 0; i < arr.length; i++) {
+  let isDuplicate = false;
 
+  // peeche check karo
+  for (let j = 0; j < i; j++) {
+    if (arr[i] === arr[j]) {
+      isDuplicate = true;
+      break;
     }
+  }
 
-    if(!visited){
-        ans[k] = arr[i];
-        k++;
-    }
-    
+  if (!isDuplicate) {
+    ans.push(arr[i]);
+  }
 }
 
 console.log(ans);
