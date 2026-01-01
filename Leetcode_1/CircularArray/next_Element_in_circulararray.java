@@ -1,4 +1,4 @@
-package Leetcode_1.CircularArray;
+package CircularArray;
 
 public class next_Element_in_circulararray {
     public static void main(String[] args) {

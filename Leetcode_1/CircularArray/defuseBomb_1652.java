@@ -1,4 +1,4 @@
-package Leetcode_1.CircularArray;
+package CircularArray;
 
 public class defuseBomb_1652 {
 

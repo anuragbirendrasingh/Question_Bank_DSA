@@ -1,4 +1,4 @@
-package Array.Sliding_Window.fixed;
+package Sliding_Window.fixed;
 
 public class index_of_max_window {
     public static void main(String[] args) {

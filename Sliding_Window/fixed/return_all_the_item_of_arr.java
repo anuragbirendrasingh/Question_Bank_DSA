@@ -1,4 +1,4 @@
-package Array.Sliding_Window.fixed;
+package Sliding_Window.fixed;
 import java.util.*;
 public class return_all_the_item_of_arr {
     public static void main(String[] args) {

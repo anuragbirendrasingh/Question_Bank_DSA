@@ -1,4 +1,4 @@
-package Leetcode_1.CircularArray;
+package CircularArray;
 
 public class traversal_on_CRArray {
     public static void main(String[] args) {
