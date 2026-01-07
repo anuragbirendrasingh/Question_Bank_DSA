@@ -1,5 +1,4 @@
 package Sliding_Window.variable;
-
 public class niceSubarrayCount_1248 {
     public static void main(String[] args) {
         int[] arr = { 1, 1, 2, 1, 1 };
@@ -9,37 +8,27 @@ public class niceSubarrayCount_1248 {
         int ans = atmost - atmost2;
         System.out.println(ans);
     }
-
     public static int count(int[] arr, int k) {
-        int si = 0;
-        int ei = 0;
-        int count = 0;
-        int ans = 0;
+        int si = 0 ,ei = 0,ans = 0,count = 0 ;
         while (ei < arr.length) {
-            // grow
-            if (isOdd(arr[ei])) {
+            if (isOdd(arr[ei])) {  //grow
                 count++;
             }
-            // shrink
-            while (count > k) {
+            while (count > k) {  // shrink
                 if (isOdd(arr[si])) {
                     count--;
                 }
                 si++;
             }
-            // update ans
-            ans = ans + (ei - si + 1);
+            ans = ans + (ei - si + 1);// update ans/
             ei++;
-        }
-        // System.out.println(ans);
+        }       // System.out.println(ans);
         return ans;
     }
-
     public static boolean isOdd(int num) {
         if (num % 2 == 0) {
             return false;
         }
         return true;
     }
-
 }
