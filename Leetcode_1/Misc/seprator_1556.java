@@ -10,7 +10,7 @@ public class seprator_1556 {
 
     public static String stringSepertor(int n) {
 
-        StringBuilder sb = new StringBuilder();
+        StringBuilder sb = new StringBuilder();       
         int count = 0;
         while (n > 0) {
             sb.append(n % 10);
