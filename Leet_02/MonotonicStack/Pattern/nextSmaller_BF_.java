@@ -1,4 +1,4 @@
-package Leet_02.MIK;
+package Leet_02.MonotonicStack.Pattern;
 
 public class nextSmaller_BF_ {
     public static void main(String[] args) {
